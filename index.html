@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TypeLift - Boost Your Typing Skills</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <!-- Logo -->
+            <a href="#" class="nav__logo">
+                <img src="./assest/svg/logo.svg" class="logo__img" alt="TypeLift logo">
+                <span>TypeLift</span>
+            </a>
+
+            <!-- Hamburger -->
+            <button class="nav__toggle nav__toggle--open" aria-expanded="false" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="">
+            <nav class="mobile__nav">
+                <button class="nav__toggle nav__toggle--close" aria-expanded="false" aria-label="Toggle menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul class="nav__menu">
+                    <li><a href="#" class="nav__link active">Home</a></li>
+                
+                    <li class="nav__list has-dropdown">
+                        <button class="dropdown-toggle" aria-expanded="false">
+                            Practice
+                            <i class="fa-solid fa-chevron-down dropdown__toggle-icon"></i>
+                        </button>
+                    
+                        <ul class="dropdown">
+                            <li><a href="#" class="dropdown__link"><i class="fa-solid fa-seedling dropdown__icon"></i> Beginner</a></li>
+                            <li><a href="#" class="dropdown__link"><i class="fa-solid fa-book-open dropdown__icon"></i> Lessons</a></li>
+                            <li><a href="#" class="dropdown__link"><i class="fa-solid fa-gauge-high dropdown__icon"></i> Speed Test</a></li>
+                            <li><a href="#" class="dropdown__link"><i class="fa-solid fa-bullseye dropdown__icon"></i> Accuracy</a></li>
+                            <li class="premium">
+                                <a href="#" class="premium__link"><i class="fa-solid fa-award"></i> Exam Mode</a>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav__list"><a href="#" class="nav__link">Progress</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Premium</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">About</a></li>
+                
+                    <li class="nav__auth">
+                        <a href="#" class="btn btn--outline">Login</a>
+                        <a href="#" class="btn btn--primary">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
