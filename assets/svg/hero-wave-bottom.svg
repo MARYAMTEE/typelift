@@ -1,0 +1,12 @@
+<svg viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <path
+    d="M0,40
+       C180,120 360,160 540,140
+       C720,120 900,40 1080,30
+       C1260,20 1380,60 1440,80
+       L1440,160
+       L0,160
+       Z"
+    fill="#ffffff"
+  />
+</svg>

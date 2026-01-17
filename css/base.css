@@ -35,6 +35,12 @@
   margin: 0;
 }
 
+img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
@@ -142,21 +148,60 @@ body {
 
 /* BUTTONS */
 .btn {
-  text-decoration: none;
   text-align: center;
   padding: .55rem 1.2rem;
   border-radius: var(--radius-full);
   font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn--outline {
   border: 1px solid var(--border-light);
   color: var(--white);
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn--primary {
   background: linear-gradient(135deg,#6366f1,#ec4899);
   color: var(--white);
+}
+
+.btn--primary:hover {
+  background: linear-gradient(135deg,#4f46e5,#db2777);
+}
+
+.btn--secondary {
+  background: var(--white);
+  color: var(--purple);
+  box-shadow: var(--shadow-sm);
+}
+      
+.btn--secondary:hover {
+  background: #f8fafc;
+  box-shadow: var(--shadow-md);
+}
+      
+.btn--large {
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+}
+      
+.btn--block {
+  width: 100%;
 }
 
 /* DROPDOWN */
@@ -216,4 +261,65 @@ body {
 .dropdown .premium__link {
   background-image: linear-gradient(135deg,#6366f1,#ec4899);
   color: #fff;
+}
+
+/* MEDIUM ≥ 48em */
+@media (min-width: 48em) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .mobile__nav {
+    position: static;
+    transform: none;
+    background: none;
+    backdrop-filter: none;
+    padding: 0;
+  }
+
+  .nav__menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .nav__link {
+    font-size: 0.95rem;
+  }
+
+  .nav__menu .active {
+    padding-block-end: 1.5rem;
+  }
+
+  .nav__auth {
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .dropdown {
+    position: absolute;
+    min-width: 14rem;
+    margin-block-start: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 64em) {
+  .nav {
+    gap: 4rem;
+  }
+
+  .nav__logo img {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+
+  .nav__menu {
+    gap: 2.5rem;
+  }
 }

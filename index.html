@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TypeLift - Boost Your Typing Skills</title>
   <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <script src="./js/script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,7 +14,7 @@
         <div class="container nav">
             <!-- Logo -->
             <a href="#" class="nav__logo">
-                <img src="./assest/svg/logo.svg" class="logo__img" alt="TypeLift logo">
+                <img src="./assets/svg/logo.svg" class="logo__img" alt="TypeLift logo">
                 <span>TypeLift</span>
             </a>
 
@@ -61,4 +62,126 @@
             </nav>
         </div>
     </header>
+
+    <main class="main">
+        <section class="hero">
+            <!-- Background semi-circle blobs -->
+            <img src="./assets/svg/hero-blob-back.svg" class="hero__blob hero__blob--back" alt="curvy svg" aria-hidden="true">
+
+            <img src="./assets/svg/hero-blob-front.svg" class="hero__blob hero__blob--front" alt="curvy svg" aria-hidden="true">
+
+            <div class="container hero__content">
+                <!-- LEFT CONTENT -->
+                <div class="hero__text">
+                    <h1 class="hero__title">Boost Your Typing Skills<br><span class="hero__span">Type smarter</span></h1>
+
+                    <p class="hero__para">Practice typing from beginner to exam level. Track progress. Improve accuracy. Get faster daily.</p>
+
+                    <div class="hero__actions">
+                        <a href="#" class="btn btn--primary">Start Typing Test</a>
+                        <a href="#" class="btn btn--outline">Track Your Progress</a>
+                    </div>
+                </div>
+
+                <!-- RIGHT VISUAL -->
+                <div class="hero__visual">
+                    <div class="hero__anchor">
+                    <!-- Main image -->
+                        <img src="./assets/images/hero-lady.png" class="hero__lady" alt="Woman typing on a laptop">
+
+                        <!-- Floating accents -->
+                        <img src="./assets/svg/hero-kite-left.svg" class="float kite" alt="image of kite">
+
+                        <img src="./assets/svg/hero-message-bar.svg" class="float message" alt="image of message">
+
+                        <img src="./assets/svg/hero-sparkle.svg" class="float sparkle" alt="image of sparkle">
+
+                        <img src="./assets/svg/hero-plus-dot.svg" class="float plus" alt="plus svg">
+
+                        <img src="./assets/svg/hero-certificate-icon.svg" class="float cert" alt="A certificate image">
+
+                        <img src="./assets/svg/hero-message-bar-2.svg" class="float message-2" alt="A message bar">
+
+                        <img src="./assets/svg/hero-stats-card.svg" class="float stats-2" alt="image of stats">
+
+                        <img src="./assets/svg/stats-card2.svg" class="float stats-card" alt="A stat card">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom curve -->
+            <img src="./assets/svg/hero-wave-bottom.svg" class="hero__wave hero__wave--bottom" alt="curvy hero bottom" aria-hidden="true">
+        </section>
+
+        <!-- Feature Card Section -->
+        <section class="feature__section">
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="feature__card-text">
+                        <h3 class="feature__text-header">Exam Simulations</h3>
+                        <p class="feature__text-para">Prepare for real OIM typing exams.</p>
+                    </div>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__card-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="feature__card-text">
+                        <h3 class="feature__text-header">Track Your Progress</h3>
+                        <p class="feature__text-para">See your speed & accuracy grow.</p>
+                    </div>
+                </div>
+
+                <div class="feature__card">
+                    <div class="feature__card-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+                    <div class="feature__card-text">
+                        <h3 class="feature__text-header">Get Certified</h3>
+                        <p class="feature__text-para">Earn your Typing Pro Certificate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typing Test Section -->
+        <section class="container typing-test" id="typing-test">
+            <div class="typing__test-header">
+                <h2 class="typing__test-title">Take a Typing Test!</h2>
+                <p class="typing__test-para">How Fast Can You Type?</p>
+            </div>
+            
+            <div class="typing__test-timer">01:00</div>
+            
+            <div class="typing__test-text" id="typingText">
+                The quick brown fox jumps over the lazy dog. Can you type faster and more accurately? Let's get started! Practice makes perfect, so keep typing to improve your speed and precision.
+            </div>
+            
+            <input type="text" class="typing__test-input" id="typingInput" placeholder="Start typing here...">
+            
+            <div class="typing__test-stats">
+                <div class="stat">
+                    <div class="stat__value" id="wpmValue">0</div>
+                    <div class="stat__label">WPM</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__value" id="accuracyValue">100%</div>
+                    <div class="stat__label">Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__value" id="timeValue">60s</div>
+                    <div class="stat__label">Time</div>
+                </div>
+            </div>
+            
+            <button class="btn btn--primary btn--large btn--block" id="startTypingBtn">Start Typing</button>
+        </section>
+    </main>
 </body>
