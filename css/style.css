@@ -209,6 +209,7 @@
 
 .typing__test-title {
   color: var(--header);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
 .typing__test-para {
