@@ -6,12 +6,20 @@
 
   --nav-gradient: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--orange-soft));
   --hero-gradient: linear-gradient(80deg, var(--blue), var(--purple), var(--pink), var(--orange-soft));
+  --how-bg: linear-gradient(135deg,hsl(226, 100%, 98%),hsl(230, 90%, 96%));
 
   --white: hsl(0, 0%, 100%);
   --text-light: hsl(226, 100%, 97%);
   --text-dark: hsl(222, 47%, 11%);
   --text-gray: hsl(215, 20%, 65%);
   --bg: hsl(210, 20%, 98%);
+  --header: hsl(233, 49%, 48%);
+  --subtitle-text: hsl(231, 13%, 48%);
+  --step-purple: hsl(257, 55%, 58%);
+  --step-rose: hsl(327, 39%, 54%);
+  --list-text: hsl(231, 13%, 42%);
+  --lavender: hsl(239, 80%, 75%);
+
 
   --border-light: hsla(0, 0%, 100%, 0.35);
   --radius-full: 999px;
